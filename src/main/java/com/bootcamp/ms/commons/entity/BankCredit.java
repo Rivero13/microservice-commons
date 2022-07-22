@@ -3,8 +3,7 @@ package com.bootcamp.ms.commons.entity;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.Date;
+import java.time.LocalDate;
 
 @Document(collection = "bankCredit")
 @Getter
@@ -12,13 +11,15 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@ToString
 public class BankCredit {
 
     @Id
     private String id;
     private String type;
     private Integer maxMovement;
-    private Date date;
+    private LocalDate date;
+    private LocalDate dateExpired;
     private Double amount;
     private Double availableBalances;
     private String idProduct;
