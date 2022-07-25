@@ -39,6 +39,8 @@ public class BankCredit {
             case "Tarjeta de Credito":
                 this.maxMovement = 3500;
                 break;
+            default:
+                break;
         }
     }
 }

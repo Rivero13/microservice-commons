@@ -18,4 +18,8 @@ public class Client {
     private String documentNumber;
     private String age;
     private String type;
+    private String celular;
+    private String imei;
+    private String correo;
+    private String documentType;
 }
